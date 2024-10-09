@@ -1,0 +1,52 @@
+@import "../base/mixin";
+.subscribe {
+  padding-top: 24px;
+  padding-bottom: 21px;
+  background: #6f73ee;
+  .container {
+    @include flexbox(space-between, center);
+    h1 {
+      width: 445px;
+      font-family: Jost;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 26.01px;
+      text-align: left;
+      color: #ffffff;
+    }
+    form {
+        @include flexbox(start, center); 
+        gap: 20px;
+      input {
+        // width: 410px;
+        height: 23px;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        padding: 15px 254px 15px 25px;
+        background: #FFFFFF33;
+        &::placeholder {
+            color: #ffffff;
+          font-family: Jost;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 23.12px;
+
+        }
+      }
+      button{
+        width: 140px;
+        height: 53px;
+        border-radius: 5px;
+        border: none;
+        color: #6F73EE;
+        &:hover {
+            background-color: lightskyblue;
+            color: #ffffff;
+            transition-duration: 0.3s;
+            cursor: pointer;
+        }
+      }
+    }
+  }
+}
