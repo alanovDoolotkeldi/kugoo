@@ -21,26 +21,44 @@
     }
     .header-right {
       //styleName: 12 px (medium);
-        @include flexbox(start, center);
+      @include flexbox(start, center);
       font-family: Jost;
       font-size: 12px;
       font-weight: 400;
       line-height: 17.34px;
       text-align: left;
       gap: 9px;
+      img{
+        cursor: pointer;
+      }
     }
   }
 }
-header{
-    padding-top: 30px;
-    padding-bottom: 35px;
-    
-    .container{
-        border: 1px solid red;
-        @include flexbox(start,center);
+header {
+  padding-top: 30px;
+  padding-bottom: 35px;
 
+  .container {
+    @include flexbox(start, center);
+    .header-basket {
+      width: 175px;
+      height: 20px;
+      margin-left: 47px;
+      @include flexbox(space-between, center);
+      gap: 25px;
+      span {
+        @include flexbox(start, center);
+        //styleName: 14 px (medium);
+        font-family: Jost;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20.23px;
+        text-align: left;
+        color: #282739;
+        gap: 10px;
+      }
     }
+  }
 }
-.header-menu{
-
+.header-menu {
 }

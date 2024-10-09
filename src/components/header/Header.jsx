@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import Catalog from '../catalog/Catalog'
 import Search from '../search/Search'
+import Menu from '../menu/Menu'
 
 function Header() {
   return (
@@ -34,6 +35,19 @@ function Header() {
       <Catalog/>
       <Search/>
       <div className="header-basket">
+        <Link>
+        <img src="/public/assets/svg/taraza.svg" alt="" />
+        </Link>
+        <Link to="/heart">
+        <img src="/public/assets/svg/heart.svg" alt="" />
+        </Link>
+        <span>
+          <Link to="/basket">
+          <img src="/public/assets/svg/basket.svg" alt="" />
+          </Link>
+          Корзина
+        </span>
+
         
       </div>
 
@@ -42,6 +56,7 @@ function Header() {
     </header>
     <div className='header-menu'>
 
+   <Menu/>
     </div>
     </>
   )
