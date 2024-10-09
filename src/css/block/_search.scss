@@ -1,0 +1,63 @@
+@import "../base/mixin";
+.search-form {
+  width: 603px;
+  height: 40px;
+  border: 1.5px solid #6f73ee;
+  border-radius: 5px;
+  margin-left: 20px;
+  .form-content {
+      position: relative;
+      padding: 10px 40px 10px 100px;
+    .everywhere {
+      position: absolute;
+      top: 4px;
+      left: 4px;
+      width: 76px;
+      height: 32px;
+      border-radius: 5px;
+      background: #f4f7fb;
+      @include flexbox(center, center);
+      gap: 4px;
+      //styleName: 14 px (regular);
+      font-family: Jost;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20.23px;
+      color: #282739;
+
+      &:hover {
+        cursor: pointer;
+        img {
+          transform: rotate(180deg);
+          transition: 0.5s;
+        }
+      }
+    }
+    input {
+      //    width: 604px;
+      outline: none;
+      width: 100%;
+      border: none;
+      &::placeholder {
+        font-family: Jost;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20.23px;
+        text-align: left;
+        color: #5d6c7b;
+      }
+    }
+    button{
+        width: 40px;
+        height: 40px;
+        border-radius: 0 5px 5px 0;
+        position: absolute;
+        top: 0;
+        right: -0.5px;
+        background: #6F73EE;
+
+        border: 1.5px solid #6F73EE;
+
+    }
+  }
+}

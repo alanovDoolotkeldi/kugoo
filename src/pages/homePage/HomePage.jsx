@@ -1,9 +1,10 @@
 import React from 'react'
+import Reklam from '../../components/reklam/Reklam'
 
 function HomePage() {
   return (
     <div>
-        home
+       <Reklam/>
       
     </div>
   )

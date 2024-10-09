@@ -1,0 +1,23 @@
+@import "../base/_mixin";
+.catalog{
+   width: 114px;
+   height: 40px;
+   border-radius: 5px;
+   border: 1.5px solid #6F73EE;
+   background: #6F73EE;
+   color: #FFFFFF;
+   @include flexbox(center,center);
+   gap: 13px;
+   margin-left: 35px;
+   .bsfilterright{
+    // height: 43px;
+    // width: 13px;
+   }
+   &:hover{
+    background-color: lightskyblue;
+    cursor: pointer;
+    border-color: lightgreen;
+    transition-duration: 0.3s;
+   }
+
+}

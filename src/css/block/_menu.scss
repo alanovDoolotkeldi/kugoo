@@ -1,0 +1,53 @@
+@import "../base/mixin";
+.menu-wrapper {
+  background: #f4f7fb;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  .container {
+    .menu-container {
+      width: 776px;
+      height: 20px;
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        @include flexbox(space-between, center);
+        li {
+            @include flexbox(start, center);
+            gap: 8px;
+          a {
+            //styleName: 14 px (medium);
+            font-family: Jost;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20.23px;
+            text-align: left;
+            color: #282739;
+            &:hover{
+                color: lightskyblue;
+            }
+          }
+          span{
+            width: 106px;
+            height: 20px;
+            background: #6F73EE;
+            font-family: Jost;
+            font-size: 10px;
+            font-weight: 400;
+            line-height: 14.45px;
+            color: #FFFFFF;
+            border-radius: 300px;
+            @include flexbox(center, center);
+            
+          }
+          .persent{
+            width: 20px;
+            height: 20px;
+            border-radius: 300px;
+
+          }
+        }
+      }
+    }
+  }
+}
