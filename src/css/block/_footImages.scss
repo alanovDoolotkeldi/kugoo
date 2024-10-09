@@ -1,0 +1,49 @@
+@import "../base/mixin";
+
+.foot-main {
+  background: #f4f7fb;
+
+  
+  .container {
+    @include flexbox(space-between, center);
+    padding-top: 36px;
+    padding-bottom: 36px;
+    border-top: 1px solid #5d6c7b;
+    border-bottom: 1px solid #5d6c7b;
+    .left-img {
+      @include flexbox(start, center);
+      gap: 59px;
+    }
+  }
+  .right-img {
+    @include flexbox(start, center);
+    gap: 10px;
+    .right-img-main {
+      width: 123px;
+      background: #ffffff;
+      border-radius: 5px;
+      height: 45px;
+      @include flexbox(center, center);
+      gap: 13px;
+      .img-text {
+        h3 {
+          //styleName: 14 px (medium);
+          font-family: Jost;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 20.23px;
+          text-align: left;
+          color: #282739;
+        }
+        p {
+          font-family: Jost;
+          font-size: 10px;
+          font-weight: 400;
+          line-height: 14.45px;
+          text-align: left;
+          color: #5d6c7b;
+        }
+      }
+    }
+  }
+}
