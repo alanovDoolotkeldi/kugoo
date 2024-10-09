@@ -1,5 +1,6 @@
-import "./App.css";
+
 import Layout from "./layout/Layout";
+import "./css/_style.scss"
 
 function App() {
   return <><Layout/></>;
