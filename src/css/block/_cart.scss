@@ -1,0 +1,207 @@
+@import "../base/mixin";
+.cart {
+  width: 255px;
+  height: 492px;
+  border: 1.5px solid #eaebed;
+  border-radius: 10px;
+  position: relative;
+
+  .cart-image {
+    height: 231px;
+    width: 100%;
+    position: relative;
+    background: #f0f1f5;
+    border-radius: 10px 10px 0 0;
+    img {
+      width: 242px;
+      height: 182px;
+      object-fit: cover;
+      margin-top: 27px;
+      margin-left: 3px;
+    }
+    p {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+    //   width: 41px;
+    //   height: 25px;
+    padding: 4px 9px 4px 9px;
+      background: #ee685f;
+      //styleName: 12 px (medium);
+      font-family: Jost;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 17.34px;
+      color: #ffffff;
+      border-radius: 5px;
+      text-align: center;
+    }
+    .cart-image-reklam {
+      width: 35px;
+      height: 35px;
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      background: #ffffff33;
+      border-radius: 50%;
+      @include flexbox(center, center);
+      span {
+        width: 100%;
+        height: 100%;
+        @include flexbox(center, center);
+        position: relative;
+        img {
+          width: 20px;
+          height: 20px;
+          object-fit: cover;
+          position: absolute;
+          top: -18px;
+          left: 5px;
+        }
+      }
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+  }
+  &:hover {
+    cursor: pointer;
+      .round-1 {
+        display: flex;
+      }
+      .round-2 {
+        display: flex;
+      }
+    
+  }
+  .round-1 {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #ffffff;
+    position: absolute;
+    top: 95px;
+    left: 13px;
+    @include flexbox(center, center);
+    display: none;
+    .img {
+      width: 25px;
+      height: 25px;
+      color: #6f73ee;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .round-2 {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #ffffff;
+    position: absolute;
+    top: 95px;
+    right: 12px;
+    @include flexbox(center, center);
+    display: none;
+    .img {
+      width: 25px;
+      height: 25px;
+      color: #6f73ee;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .cart-info {
+    padding: 20px 25px 20px 24px;
+    .cart-content {
+      padding: 0;
+      h3 {
+        font-family: Jost;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 26.01px;
+        text-align: left;
+        color: #282739;
+      }
+      .cart-mileage {
+        margin-top: 20px;
+        margin-left: 1px;
+        .cart-mileage-blocks {
+          @include flexbox(start, center);
+          gap: 24px;
+          .cart-mileage-block {
+            @include flexbox(start, center);
+            gap: 24px;
+            margin: 0;
+            padding: 0;
+            font-family: Roboto;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 16.41px;
+            text-align: left;
+            color: #5d6c7b;
+            gap: 10px;
+          }
+          .cart-mileage-block-1 {
+            width: 93px;
+          }
+        }
+        .cart-mileage-blocks-2 {
+          margin-top: 16px;
+        }
+      }
+      .cart-price {
+        margin-top: 25px;
+        @include flexbox(space-between, center);
+        .cart-skids {
+          span {
+            font-family: Jost;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 17.34px;
+            text-align: left;
+            text-decoration: line-through;
+            color: rgb(93, 108, 123, 0.9);
+          }
+          h5 {
+            font-family: Jost;
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 28.9px;
+            text-align: left;
+            color: #282739;
+          }
+        }
+        .cart-basket {
+          @include flexbox(start, center);
+          gap: 10px;
+          .round {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 1.3px solid #eaebed;
+            @include flexbox(center, center);
+          }
+        }
+      }
+      .cart-button {
+        margin-top: 16px;
+        button {
+          width: 206px;
+          height: 37px;
+          border: none;
+          background: #6f73ee;
+          border-radius: 5px;
+          font-family: Jost;
+          font-size: 12px;
+          font-weight: 400;
+          line-height: 17.34px;
+          text-align: center;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}
