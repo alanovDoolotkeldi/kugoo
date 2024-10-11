@@ -1,0 +1,62 @@
+@import "../base/mixin";
+.dolivery {
+  margin-top: 110px;
+  .dolivery-wrapper {
+    width: 1380px;
+    height: 421px;
+    border-radius: 10px;
+    background: radial-gradient(
+        76.7% 707.77% at 23.3% 72.57%,
+        #595959 0%,
+        #3b3e46 100%
+      )
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    margin: 0 auto;
+    position: relative;
+  }
+  .dolivery-text {
+    width: 441px;
+    height: 287px;
+    position: absolute;
+    top: 67px;
+    right: 172px;
+    span {
+      width: 62px;
+      height: 27px;
+      background: #ee685f;
+      border-radius: 5px;
+      font-family: Jost;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20.23px;
+      border: 1px solid #ee685f;
+      color: #ffffff;
+      @include flexbox(center, center);
+      cursor: pointer;
+    }
+    h1 {
+      margin-top: 27px; //styleName: 35 px (semibold);
+      font-family: Jost;
+      font-size: 35px;
+      font-weight: 600;
+      line-height: 50.58px;
+      text-align: left;
+      color: #ffffff;
+    }
+    button {
+      width: 132px;
+      height: 53px;
+      background: #ffffff;
+      border-radius: 5px;
+      //styleName: 16 px (regular);
+      font-family: Jost;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 23.12px;
+      text-align: center;
+      color: #282739;
+      border: none  ;
+      margin-top: 27px;
+    }
+  }
+}

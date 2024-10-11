@@ -1,0 +1,82 @@
+@import "../base/mixin";
+.model {
+  margin-top: 110px;
+  .container {
+    .model-blocks {
+      @include flexbox(space-between, center);
+      gap: 30px;
+      .model-block {
+        width: 540px;
+        height: 235px;
+        background: #f4f7fb;
+        border-radius: 10PX;
+        position: relative;
+        .model-block-info {
+          padding: 32px 0 33px 40px;
+          h1 {
+            width: 258px;
+            color: #282739;
+            //styleName: 25 px semibold;
+            font-family: Jost;
+            font-size: 25px;
+            font-weight: 600;
+            line-height: 36.13px;
+            text-align: left;
+          }
+          p {
+            width: 258px;
+            //styleName: 16 px (regular);
+            font-family: Jost;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 23.12px;
+            text-align: left;
+            color: #282739;
+            margin-top: 10px;
+          }
+          span{
+              padding-top: 22px;
+              gap: 8px;
+            @include flexbox(start, center);
+              a {
+              //styleName: 14 px (medium);
+              font-family: Jost;
+              font-size: 14px;
+              font-weight: 400;
+              line-height: 20.23px;
+              text-align: left;
+              color: #6f73ee;
+            }
+          }
+        }
+        .model-image{
+            width: 310px;
+            height: 233px;
+
+            position: absolute;
+            top: 0;
+            left: 303px;
+            .model-image-info{
+                position: relative;
+
+                
+                .img-item{
+                    
+                    object-fit: contain;
+                    z-index: 9;
+                    position: absolute;
+                    border-radius: 0 0 10px 0;
+                }
+                .image-div{
+                    position: absolute;
+                    top: 0;
+                    left: 74px;
+                    border-radius: 0 10px 10px 0;
+
+                }
+            }
+        }
+      }
+    }
+  }
+}

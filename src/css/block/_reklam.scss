@@ -9,9 +9,9 @@
   position: relative;
 
   .wrapper-content {
-    width: 100%;
-    height: 100%;
-    background: url("/public/assets/svg/reklam.svg") center center no-repeat;
+    width: 1380px;
+    height: 421px;
+    background: url("/public/assets/svg/reklam.svg") center center no-repeat !important;
     position: relative;
     .container {
       .wrapper-text {
@@ -170,7 +170,7 @@
         color: #ffffff;
       }
       .change {
-        width: 34px;
+        width: 35px;
         background-color: #8e91f2;
         border-radius: 300px;
         .change-item {

@@ -1,0 +1,84 @@
+@import "../base/mixin";
+.garant {
+  padding-top: 39px;
+  padding-bottom: 88px;
+  .container {
+    .blocks {
+      @include flexbox(space-between, center);
+      .block {
+        h1 {
+          font-family: Jost;
+          font-size: 25px;
+          font-weight: 600;
+          line-height: 36.13px;
+          text-align: left;
+          color: #282739;
+        }
+        p {
+          font-family: Jost;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 23.12px;
+          text-align: left;
+          color: #282739;
+          margin-top: 1px;
+        }
+      }
+      .block-1 {
+        margin-left: 78px;
+      }
+      .block-2 {
+        margin-left: 134px;
+      }
+      .yandex {
+        border: 1px solid #5d6c7b1a;
+        width: 190px;
+        height: 76px;
+        background: #ffffff;
+        border: 1px solid #5d6c7b1a;
+        margin-left: 196px;
+        border-radius: 5px;
+        .yandex-info {
+          padding: 10px 27px 10px 10px;
+          @include flexbox(space-between);
+          gap: 18px;
+          .yandex-image {
+            width: 56px;
+            height: 56px;
+            background: #fc3f1d;
+            border-radius: 5px;
+            @include flexbox(center, center);
+            backdrop-filter: blur(15px);
+            box-shadow: 2px 2px 4px 0px rgb(252, 63, 29,0.5);
+          }
+          .yandex-text {
+            small {
+              margin: 0;
+              padding: 0;
+              //styleName: 12 px (regular);
+              font-family: Jost;
+              font-size: 12px;
+              font-weight: 400;
+              line-height: 17.34px;
+              text-align: left;
+              color: #5d6c7b;
+            }
+            span {
+              @include flexbox(start);
+              //styleName: 25 px semibold;
+              font-family: Jost;
+              font-size: 25px;
+              font-weight: 600;
+              line-height: 36.13px;
+              text-align: left;
+              color: #282739;
+              gap: 5px;
+              margin: 0;
+              padding: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
