@@ -1,0 +1,137 @@
+@import "../base/mixin";
+.popular-categories {
+  margin-top: 100px;
+  .container {
+    .top-categories {
+      @include flexbox(space-between, center);
+      h1 {
+        //styleName: 35 px (semibold);
+        font-family: Jost;
+        font-size: 35px;
+        font-weight: 600;
+        line-height: 50.58px;
+        text-align: left;
+        color: #282739;
+      }
+      .top-right {
+        width: 279px;
+        height: 91px;
+        .top-info {
+          padding: 10px;
+          @include flexbox(start, start);
+          background: #f4f7fb;
+          border-radius: 5px;
+          gap: 19px;
+          .top-text {
+            p {
+              //styleName: 12 px (medium);
+              font-family: Jost;
+              font-size: 12px;
+              font-weight: 400;
+              line-height: 17.34px;
+              text-align: left;
+              color: #282739;
+              margin-top: 6px;
+            }
+            a {
+              //styleName: 12 px (medium);
+              font-family: Jost;
+              font-size: 12px;
+              font-weight: 400;
+              line-height: 17.34px;
+              text-align: left;
+              color: #6f73ee;
+            }
+          }
+        }
+      }
+    }
+    .popular-blocks {
+      margin-top: 68px;
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      grid-gap: 26.6px;
+      
+  transition-duration: 0.4s;
+      .popular-block {
+        width: 255px;
+        height: 255px;
+        border: 2px solid;
+        
+
+        border-image-source: linear-gradient(
+          269deg,
+          rgba(255, 255, 255, 0.1) 1.33%,
+          rgba(255, 255, 255, 0) 98.69%
+        );
+        position: relative;
+        border-radius: 10px;
+        img {
+          border-radius: 10px;
+        }
+        .popular-content {
+          position: absolute;
+          bottom: 11px;
+          left: 10px;
+          width: 233px;
+          background: #00000033;
+          border: 2px solid;
+
+          border-image-source: linear-gradient(
+            269deg,
+            rgba(255, 255, 255, 0.1) 1.33%,
+            rgba(255, 255, 255, 0) 98.69%
+          );
+          border-radius: 10px;
+
+          backdrop-filter: blur(10px);
+
+          .popular-text {
+            padding: 10px 0 11px 16px;
+            p {
+              //styleName: 18 px (medium);
+              font-family: Jost;
+              font-size: 18px;
+              font-weight: 400;
+              line-height: 26.01px;
+              text-align: left;
+              color: #ffffff;
+            }
+            span {
+              //styleName: 14 px (medium);
+              font-family: Jost;
+              font-size: 14px;
+              font-weight: 400;
+              line-height: 20.23px;
+              text-align: left;
+              color: #ffffff;
+              margin-top: 2px;
+            }
+          }
+        }
+      }
+    }
+    .hide {
+        margin-top: 65px;
+        @include flexbox(center, center);
+      button {
+        border: 1.3px solid #6f73ee;
+        width: 142px;
+        height: 53px;
+        background: white;
+        border-radius: 5px;
+        font-family: Jost;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 23.12px;
+        text-align: center;
+        color: #6F73EE;
+        &:hover{
+          background: #6F73EE;
+          color: white;
+          transition: 0.3s ease-in-out;
+        }
+      }
+    }
+  }
+}

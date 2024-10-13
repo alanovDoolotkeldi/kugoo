@@ -1,0 +1,67 @@
+@import "../base/mixin";
+.we-offer {
+  margin-top: 100px;
+  .container {
+    // border: 1px solid red;
+    .we-offer-texts {
+      @include flexbox(start, center);
+      flex-direction: column;
+      h1 {
+        //styleName: 35 px (semibold);
+        font-family: Jost;
+        font-size: 35px;
+        font-weight: 600;
+        line-height: 50.58px;
+        text-align: center;
+        color: #282739;
+      }
+      p {
+        //styleName: 20 px (regular);
+        font-family: Jost;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 28.9px;
+        text-align: center;
+        color: #282739;
+        margin-top: 18px;
+      }
+      .we-offer-buttons {
+        margin-top: 51px;
+        @include flexbox(center, center);
+        gap: 20px;
+        button {
+          width: 175px;
+          height: 53px;
+          background-color: #f4f7fb;
+          //styleName: 16 px (regular);
+          font-family: Jost;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 23.12px;
+          text-align: center;
+          color: #5d6c7b;
+          border: none;
+          border-radius: 5px;
+          transition: background-color 0.3s, color 0.3s;
+
+          &:first-child {
+            color: #ffffff;
+            background-color: #6f73ee;
+          }
+
+          &:not(.active):hover {
+            border: 1px solid #6f73ee !important;
+          }
+        }
+      }
+    }
+    .we-offer-blocks {
+        margin-top: 58px;
+
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 28px;
+        transition-duration: 0.4s;
+    }
+  }
+}

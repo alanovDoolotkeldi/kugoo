@@ -3,9 +3,10 @@
   padding-top: 50px;
   .container {
     .carts {
-      @include flexbox(start, center);
-      flex-wrap: wrap;
-      gap: 27.2px;
+      // @include flexbox(start, center);
+      // flex-wrap: wrap;
+      display: grid; grid-template-columns: repeat(4,1fr);
+      gap: 26px;
       
     }
     .hide {

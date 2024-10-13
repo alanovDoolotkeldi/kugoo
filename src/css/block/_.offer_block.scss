@@ -1,0 +1,47 @@
+.offer-block {
+  width: 350px;
+  height: 185px;
+  border: 1px solid red;
+  border: 1px solid #eaebed;
+  border-radius: 10px;
+  
+  transition-duration: 0.4s;
+  .offer-block-info {
+      padding: 26px 27px 26px 20px;
+    img{
+        width: 25px;
+        height: 25px;
+        object-fit: cover;
+    }
+    h5 {
+      //styleName: 18 px (medium);
+      font-family: Jost;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 26.01px;
+      text-align: left;
+      color: #282739;
+      margin-top: 20px;
+    }
+    span{
+      font-family: Jost;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 18px;
+      text-align: left;
+      color: #282739;
+      margin-top: 8px;
+    }
+  }
+}
+.we_offer_class{
+   &:first-child{
+    height: 225px;
+   }
+   &:nth-child(2){
+    height: 225px;
+   }
+   &:nth-child(3){
+    height: 225px;
+   }
+}

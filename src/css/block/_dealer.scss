@@ -1,0 +1,175 @@
+@import "../base/mixin";
+.dealer {
+  width: 1380px;
+//   height: 623px;
+  border-width: 0px, 0px, 0px, 0px;
+
+  border-style: solid;
+
+  border-image-source: linear-gradient(
+    269deg,
+    rgba(255, 255, 255, 0.1) 1.33%,
+    rgba(255, 255, 255, 0) 98.69%
+  );
+
+  margin: 0 auto;
+  margin-top: 100px;
+  background: #f4f7fb;
+  border-radius: 10px;
+  .dealer-container {
+    padding: 29px 135px 29px 28px;
+    @include flexbox(start, start);
+    gap: 71px;
+    .dealer-image {
+      width: 606px;
+      height: 565px;
+      position: relative;
+      img {
+        border-radius: 10px;
+      }
+      .dealer-info {
+        width: 233px;
+        height: 139px;
+
+        position: absolute;
+        bottom: 20px;
+        right: 31px;
+        .dealer-content {
+          position: relative;
+          height: 100%;
+          border: 1px solid red;
+          background: #ffffff33;
+          border-radius: 10px;
+          border: 1px solid;
+
+          border-image-source: linear-gradient(
+            269deg,
+            rgba(255, 255, 255, 0.1) 1.33%,
+            rgba(255, 255, 255, 0) 98.69%
+          );
+
+          backdrop-filter: blur(10px);
+          .dealer-info-text {
+            width: 182px;
+            margin-top: 17px;
+            margin-left: 21px;
+            h5 {
+              //styleName: 18 px (medium);
+              font-family: Jost;
+              font-size: 18px;
+              font-weight: 400;
+              line-height: 26.01px;
+              text-align: left;
+              color: #ffffff;
+            }
+            p {
+              margin-top: 5px;
+              font-family: Jost;
+              font-size: 14px;
+              font-weight: 400;
+              line-height: 17.01px;
+              text-align: left;
+              color: #ffffff;
+            }
+          }
+          button {
+            padding-left: 22px;
+            padding-right: 21px;
+            position: absolute;
+            left: -0.5px;
+            bottom: -1px;
+            width: 233px;
+            height: 42px;
+            //styleName: 14 px (medium);
+            font-family: Jost;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20.23px;
+            text-align: left;
+            @include flexbox(start, center);
+            gap: 104px;
+            margin-top: 15px;
+            border: none;
+            border-radius: 10px;
+            background: #6f73ee;
+            color: #ffffff;
+          }
+        }
+      }
+    }
+    .dealer-texts {
+      width: 540px;
+      h1 {
+        //styleName: 35 px (semibold);
+        font-family: Jost;
+        font-size: 35px;
+        font-weight: 600;
+        line-height: 50.58px;
+        text-align: left;
+        color: #282739;
+        margin-top: 29px;
+      }
+      p {
+        //styleName: 16 px (regular);
+        font-family: Jost;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 23.12px;
+        text-align: left;
+        color: #282739;
+        margin-top: 18px;
+      }
+      .dealer-content {
+        width: 100%;
+        height: 204px;
+        background: #ffffff;
+        border-radius: 10px;
+        margin-top: 40px;
+        .dealer-content-texts {
+          padding: 20px 29.8px 21px 23.2px;
+          h5 {
+            //styleName: 14 px (medium);
+            font-family: Jost;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20.23px;
+            text-align: left;
+            color: #282739;
+          }
+          .dealer-content-blocks {
+            margin-top: 13px;
+            .dealer-content-block {
+              @include flexbox(start, center);
+              //   border: 1px solid red;
+              gap: 10.54px;
+              img {
+                object-fit: contain;
+                // margin-top: 4.8px;
+              }
+              span {
+                //styleName: 14 px (regular);
+                font-family: Jost;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 20.23px;
+                text-align: left;
+                color: #282739;
+              }
+            }
+          }
+          a {
+            //styleName: 12 px (medium);
+            font-family: Jost;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 17.34px;
+            text-align: left;
+            color: #6f73ee;
+            margin-top: 13px;
+            display: flex;  
+          }
+        }
+      }
+    }
+  }
+}
