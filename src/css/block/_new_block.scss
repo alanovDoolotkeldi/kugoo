@@ -1,0 +1,93 @@
+@import "../base/mixin";
+.new-block-wrapper {
+    width: 1480px;
+    margin: 0 auto;
+    margin-top: 100px;
+    @include flexbox(end);
+  .container-new {
+    width: 1300px;
+    h1 {
+      //styleName: 35 px (semibold);
+      font-family: Jost;
+      font-size: 35px;
+      font-weight: 600;
+      line-height: 50.58px;
+      text-align: left;
+      color: #282739;
+    }
+    .new-block-info {
+        // max-width: 1110px;
+      margin-top: 60px;
+      overflow: hidden;
+      .new-blocks {
+        @include flexbox(start, center);
+        gap: 30px;
+        position: relative;
+        .new-block {
+          width: 350px;
+          height: 367px;
+          background: #f4f7fb;
+          border-radius: 10px;
+          img {
+            width: 350px;
+            height: 186px;
+            object-fit: cover;
+          }
+          .new-block-texts {
+            padding: 20px 49px 26px 20px;
+            h3 {
+              //styleName: 20 px (medium);
+              font-family: Jost;
+              font-size: 20px;
+              font-weight: 400;
+              line-height: 23.8px;
+              text-align: left;
+              color: #282739;
+            }
+            p {
+              //styleName: 14 px (regular);
+              font-family: Jost;
+              font-size: 14px;
+              font-weight: 400;
+              line-height: 20.23px;
+              text-align: left;
+              color: #282739;
+              margin-top: 11px;
+            }
+            .new-block-date {
+              @include flexbox(start, center);
+              gap: 25px;
+              margin-top: 18px;
+              span {
+                @include flexbox(start, center);
+                gap: 10px;
+                //styleName: 12 px (regular);
+                font-family: Jost;
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 17.34px;
+                text-align: left;
+                color: #5d6c7b;
+                img {
+                  width: 18px;
+                  height: 18px;
+                  object-fit: cover;
+                }
+              }
+            }
+          }
+        }
+        .button{
+            width: 68px;
+            height: 68px;border: 1px solid #6F73EE;background-color: #6F73EE;
+            border-radius: 50%;
+            position: absolute;
+            top: 152px;
+            left: 710px;
+            @include flexbox();
+            cursor: pointer;
+        }
+      }
+    }
+  }
+}

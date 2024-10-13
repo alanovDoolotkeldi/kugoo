@@ -1,0 +1,99 @@
+@import "../base/mixin";
+.video-review {
+  margin-top: 100px;
+  .video-review-wrapper {
+    width: 1480px;
+    margin: 0 auto;
+    @include flexbox(end, start);
+    .video-review-info {
+      width: 1300px;
+      .video-review-text {
+        width: 1110px;
+        margin: 0 auto;
+        @include flexbox(space-between, start);
+        .video-review-text-left {
+          h1 {
+            //styleName: 35 px (semibold);
+            font-family: Jost;
+            font-size: 35px;
+            font-weight: 600;
+            line-height: 50.58px;
+            color: #282739;
+          }
+          p {
+            width: 405px;
+            //styleName: 14 px (regular);
+            font-family: Jost;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20.23px;
+            text-align: left;
+            color: #5d6c7b;
+            margin-top: 17px;
+          }
+        }
+        a {
+          //styleName: 14 px (medium);
+          font-family: Jost;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 20.23px;
+          text-align: left;
+          color: #6f73ee;
+          margin-top: 16px;
+          @include flexbox();
+          gap: 8px;
+        }
+      }
+      .video-global-block {
+        margin-top: 49px;
+        @include flexbox(start, start);
+        gap: 30px;
+        .video-review-first-block {
+          width: 540px;
+          height: 350px;
+          p {
+            //styleName: 18 px (medium);
+            font-family: Jost;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 26.01px;
+            text-align: left;
+            color: #282739;
+            margin-top: 20.06px;
+          }
+        }
+        .video-review-blocks {
+          @include flexbox(start, start);
+          position: relative;
+          gap: 30px;
+          .video-review-block {
+            width: 350px;
+            p {
+              //styleName: 18 px (medium);
+              font-family: Jost;
+              font-size: 18px;
+              font-weight: 400;
+              line-height: 26.01px;
+              text-align: left;
+              color: #282739;
+              width: 220px;
+              margin-top: 20px;
+            }
+          }
+          button{
+            width: 68px;
+            height: 68px;
+            border: 1px solid #6F73EE;
+            background: #6F73EE;
+            border-radius: 50%;
+            position: absolute;
+            top: 95px;
+            left: 331px;
+
+          }
+        }
+      }
+    }
+  }
+}

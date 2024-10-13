@@ -1,0 +1,52 @@
+@import "../base/mixin";
+.video {
+  margin-top: 100px;
+  .video-container {
+    width: 1380px;
+    height: 630px;
+    margin: 0 auto;
+    position: relative;
+    background: radial-gradient(
+        76.7% 707.77% at 23.3% 72.57%,
+        #595959 0%,
+        #3b3e46 100%
+      )
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    border-radius: 10px;
+    video{
+        source{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .play {
+      cursor: pointer;
+      width: 106px;
+      height: 106px;
+      background: #ffffff;
+      border-radius: 50%;
+      @include flexbox();
+      position: absolute;
+      top: 255px;
+      left: 632px;
+    }
+    .pause {
+      cursor: pointer;
+      width: 106px;
+      height: 106px;
+      background: #ffffff;
+      border-radius: 50%;
+      @include flexbox();
+      position: absolute;
+      top: 255px;
+      left: 632px;
+      display: none;
+    }
+    &:hover{
+        cursor: pointer;
+        .pause{
+            display: flex;
+        }
+    }
+  }
+}
