@@ -12,6 +12,7 @@ import Video from '../../components/video/Video'
 import Review from '../../components/review/Review'
 import VideoReviews from '../../components/videoReviews/VideoReviews'
 import NewBlock from '../../components/newBlock/NewBlock'
+import Accordion from '../../components/accordion/Accordion'
 
 function HomePage() {
   return (
@@ -29,6 +30,7 @@ function HomePage() {
        <Review/>
        <VideoReviews/>
        <NewBlock/>
+       <Accordion/>
        <div style={{height:"100px"}}></div>
       
     </div>
